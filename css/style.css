@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg--dark--color: #262626;
+    --red: #F20505;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+}
+
+.navigation {
+    position: relative;
+    height: 100vh;
+    background: var(--bg--dark--color);
+    box-shadow: 10px 0 0 #F20505;
+    width: 70px;
+    overflow-x: hidden;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+.title-h1 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 48px;
+}
+
+.title-h1 a {
+    color: #fff;
+    margin-top: 8px;
+    font-size: 1.6rem;
+    padding-left: 7px;
+
+}
+
+.navigation ul {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 48px;
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.navigation ul li a .icon ion-icon {
+    position: relative;
+    font-size: 1.5rem;
+    z-index: 1;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+
+.navigation ul li.active {
+    background-color: var(--red);
+}
+
+.navigation ul li.active a::before {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--bg--dark--color);
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 var(--red);
+}
+
+.navigation ul li.active a::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: var(--bg--dark--color);
+    border-radius: 50%;
+    box-shadow: 15px -15px 0 var(--red);
+}
+
+/* Main */
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+.home {
+    background: url('../img/bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+}
+
+.home h1 {
+    font-size: 2.5rem;
+}
+
+.home h2 {
+    font-size: 1.5rem;
+}
+
+.home h3 {
+    font-size: 1.0rem;
+}
+
+.home a {
+    text-decoration: none;
+}
+
+.home a p {
+    border: 1px solid #fff;
+    font-size: 1.0rem;
+    padding: 4px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    opacity: 0.85;
+    transition: 0.5s;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+.home a p:hover {
+    opacity: 1;
+}
+
+.home h2,
+h3,
+h1,
+a,
+p {
+    color: #fff;
+}
+
+.aba-clientes {
+    display: none;
+}
